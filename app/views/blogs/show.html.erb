@@ -1,0 +1,10 @@
+ <h2><%= @blog.title %></h2>
+    <hr/>
+  <div class="col-md-12">
+     
+    <%= markdown(@blog.description) %> 
+    <%= link_to 'Edit Blog',edit_blog_path(@blog),class: 'btn btn-success' %>
+    
+    </div>
+  </div>
+</div>
